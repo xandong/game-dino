@@ -43,6 +43,7 @@ h1 {
 main {
   width: 100vw;
   height: fit-content;
+  padding: 16px;
 
   display: flex;
   flex-direction: row;

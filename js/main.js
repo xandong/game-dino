@@ -152,21 +152,14 @@ function alterMode() {
 }
 
 function reset() {
-  let nickname = prompt(
-    "Deixe sua pontuação registrada no ranking! Qual seu nickname?"
-  );
-  if (nickname != null) {
-    // insereRank(nickname, distance);
-    console.log(`${nickname} fez ${distance} pontos!`);
-  }
   (stateGame = false), (isEndGame = false), (position = 20), (distance = 0);
-  title.innerHTML = "Precione enter/espaço para começar!";
-  points.innerHTML = "POINTS";
-  btnMobile.innerHTML = "start";
   const heart = document.createElement("img");
   heart.classList.add("heart");
   heart.src = "img/heart-pixel.png";
   hearts.appendChild(heart);
+  points.innerHTML = "POINTS";
+  btnMobile.innerHTML = "start";
+  title.innerHTML = "Precione enter/espaço para começar!";
   console.log("Jogo resetado");
 }
 
